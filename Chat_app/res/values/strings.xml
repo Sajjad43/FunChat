@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fun_Chat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Dialog_title">Name of the Group</string>
+    <string name="filter">Enter the name</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/Event"
+        android:orderInCategory="1"
+        android:title="Event">
+    </item>
+    <item
+        android:id="@+id/Group_photo"
+        android:orderInCategory="2"
+        android:title="Group Photo">
+    </item>
+    
+    <item
+        
+        android:id="@+id/notification"
+        android:orderInCategory="3"
+        android:title="Notification"
+        
+        >
+         
+    </item>
+
+    <item 
+        android:id="@+id/photoUpload"
+        android:orderInCategory="4"
+        android:title="Profile Pic_Upload"
+         
+        />
+</menu>

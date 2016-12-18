@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/dialog_subtitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Dialog_title"
+        android:layout_alignParentTop="true"
+        android:textSize="17sp"
+        android:textColor="#00CED1"
+        android:layout_marginLeft="5dp"
+        
+        />
+    
+    <EditText 
+        android:id="@+id/groupName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/dialog_subtitle"
+        android:hint="Name anything you like" 
+        
+        />
+    
+    
+    
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:layout_marginBottom="45dp"
+        android:layout_below="@id/groupName"
+          
+          >
+
+    </ListView>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:paddingRight="5dp"
+            android:text="ok" />
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+
+     <item
+        android:id="@+id/Picture"
+        android:orderInCategory="0"
+        android:title="Picture"/>
+    
+    <item
+        android:id="@+id/vedio"
+        android:orderInCategory="1"
+        android:title="Vedio"/>
+    
+</menu>

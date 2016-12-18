@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.text"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+   	<uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.text.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.GroupImageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.Second_activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Second" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.Notification_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Notify" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.Third_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Third" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.text.Third_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.ImageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.Event_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.SendingImage_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.text.ImageDisplayActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.text.Service_Socket"
+            android:exported="true" >
+        </service>
+       
+        <service
+            android:name="com.example.text.ServiceFetch_FriendPic"
+            android:exported="true" >
+        </service>
+
+        <receiver android:name="com.example.text.InternetReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.text.ShutdownReceiver" 
+             
+            >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                 
+           
+                
+                </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.text.Reboot_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>  
+                </intent-filter>      
+                 </receiver>
+    </application>
+
+</manifest>
